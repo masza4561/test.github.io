@@ -1,15 +1,22 @@
 @font-face {
 	font-family: 'BenchNine';
 	src: url(../fonts/BenchNine-Light.ttf);
-	font-weight: normal;
+	font-style: normal;
 	font-weight: 300;
 }
 @font-face {
 	font-family: 'BenchNine';
 	src: url(../fonts/BenchNine-Regular.ttf);
-	font-weight: normal;
+	font-style: normal;
 	font-weight: 400;
 }
+@font-face {
+	font-family: 'BenchNine';
+	src: url(../fonts/BenchNine-Bold.ttf);
+	font-style: normal;
+	font-weight: 700;
+}
+
 @font-face {
 	font-family: 'BenchNine';
 	src: url(../fonts/BenchNine-Bold.ttf);
@@ -32,7 +39,8 @@
 @font-face {
 	font-family: 'Open Sans';
 	src: url(../fonts/OpenSans-BoldItalic.ttf);
-	font-weight: bold, italic;
+	font-weight: bold;
+	font-style: italic;
 }
 @font-face {
 	font-family: 'Champagne';
