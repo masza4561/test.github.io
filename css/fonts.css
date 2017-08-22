@@ -1,8 +1,32 @@
 @font-face {
-	font-family: 'Pupcat';
-	src: url(../fonts/pupcat.ttf);
+	font-family: 'BenchNine';
+	src: url(../fonts/BenchNine-Regular.ttf);
+	font-weight: normal;
 }
-
+@font-face {
+	font-family: 'BenchNine';
+	src: url(../fonts/BenchNine-Bold.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/OpenSans-Bold.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/OpenSans-Italic.ttf);
+	font-weight: italic;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/OpenSans-BoldItalic.ttf);
+	font-weight: bold, italic;
+}
 @font-face {
 	font-family: 'Champagne';
 	src: url(../fonts/Champagne_Limousines.ttf);
