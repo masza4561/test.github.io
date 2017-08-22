@@ -1,7 +1,9 @@
 jQuery(document).ready(function () {
 
 
-    $('#carouselHacked').carousel();
+    $('#carouselHacked').carousel({
+		pause: null // img mouseover action cause pause the autoplay
+	});
 
     //this code is for the gmap
     var map = new GMaps({

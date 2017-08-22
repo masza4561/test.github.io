@@ -319,11 +319,14 @@ li a.active {
 	margin-top: 40px;
 	
 }
+.service .row:after {
+	padding-bottom: 40px;
+}
 .service h2 {
     font-size: 90px;
     color: #fff;
     margin-top: 85px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
 }
 .service h4 {
     font-size: 24px;
@@ -612,7 +615,7 @@ li a.active {
     width: 100%;
     height: 40px;
     background: #fff;
-    font-size: 13px;
+    font-size: 14px;
     color: #084a5c;
     font-family: 'Open Sans', sans-serif;
     padding: 12px;
@@ -621,6 +624,8 @@ li a.active {
 }
 .contact-form textarea {
     font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #084a5c;
     padding: 12px;
     width: 100%;
     height: 140px;
@@ -655,7 +660,7 @@ li a.active {
 /*gmap*/
 
 #map {
-    height: 830px;
+    height: 750px;
 }
 .map {
     position: relative;
@@ -664,10 +669,10 @@ li a.active {
 .contact {
     position: absolute;
     width: 100%;
-    height: 830px;
+    height: 750px;
     margin-top: 0px;
     left: 0;
-    margin-top: -830px;
+    margin-top: -750px;
     background: rgba(0, 0, 0, 0.51);
 }
 .contact-caption {
@@ -676,6 +681,12 @@ li a.active {
 
 /*footer*/
 
+.footer img {
+	margin: 50px auto 20px auto;
+}
+.footer h3 {
+	margin-bottom: 30px;
+}
 .footer-para {
     margin: 0;
     padding: 0;
@@ -845,6 +856,7 @@ responsive area
 @media (min-width: 480px) and (max-width: 767px) {
     .header-logo img {
         margin-top: 20px;
+		max-height: 56px;
     }
     .navbar-default .navbar-nav>li>a {
         font-size: 20px;
@@ -891,7 +903,7 @@ responsive area
 
 @media (max-width: 479px) {
     .top-header img.logo {
-        margin: 20px 10px;
+        margin: 20px 0px;
     }
     .header-logo {
         margin-top: 20px !important;
