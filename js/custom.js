@@ -2,6 +2,7 @@ jQuery(document).ready(function () {
 
 
     $('#carouselHacked').carousel({
+		// interval : 30000,
 		pause: null // img mouseover action cause pause the autoplay
 	});
 
@@ -11,6 +12,8 @@ jQuery(document).ready(function () {
         lat: 47.488836,
         lng: 19.051549
     });
+	
+	var picture_change = 0;
 
 
     //this code is for smooth scroll and nav selector
@@ -59,30 +62,66 @@ jQuery(document).ready(function () {
         var windowScrollPosTop = jQuery(window).scrollTop();
 
         if (windowScrollPosTop >= 150) {
-            jQuery(".header").css({
+            /*
+			jQuery(".header").css({
                 "background": "#B193DD",
             });
+
             jQuery(".top-header img.logo").css({
                 "margin-top": "-40px",
                 "margin-bottom": "0"
             });
+
             jQuery(".navbar-default").css({
-                "margin-top": "-15px",
+                "margin-top": "8px",
             });
+			*/
+			jQuery(".top-header").css({
+                "padding-top": "0px",
+                "padding-bottom": "0px"
+            });
+			/*
+			 $(".boat_listing .mainGallery")
+        .fadeOut(400, function() {
+            $(".boat_listing .mainGallery").attr('src',$imgURL);
+        })
+        .fadeIn(400);*/
+		//$(".logo").attr("src","img/logo12.png");
+		if(($(".logo").attr("src")  == "img/logo11.png") && (picture_change == "0")) { 
+			picture_change = 1;
+			$(".logo").fadeOut(500, function() {
+				$(".logo").attr("src","img/logo12.png");
+			}).fadeIn(500);
+			console.log("change logo to 12");
+			}
         } else {
-            jQuery(".header").css({
+            /*
+			jQuery(".header").css({
                 "background": "transparent",
             });
+			
             jQuery(".top-header img.logo").css({
                 "margin-top": "-15px",
                 "margin-bottom": "25px"
             });
+			
             jQuery(".navbar-default").css({
-                "margin-top": "12px",
+                "margin-top": "8px",
                 "margin-bottom": "0"
             });
-
-        }
+			*/
+            jQuery(".top-header").css({
+                "padding-top": "10px",
+                "padding-bottom": "10px"
+            });
+			if(($(".logo").attr("src")  == "img/logo12.png") && (picture_change == "1")) { 
+				picture_change = 0;
+				$(".logo").fadeOut(500, function() {
+					$(".logo").attr("src","img/logo11.png");
+				}).fadeIn(500);
+				console.log("change logo to 11");
+			}
+		}
     });
 	
 	/*
