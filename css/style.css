@@ -210,7 +210,7 @@ li a.active {
 }
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
-    font-size: 18px;
+    font-size: 22px;
     padding: 5px;
 	/*
     background: #fff;
@@ -223,7 +223,7 @@ li a.active {
 }
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next {
-    font-size: 18px;
+    font-size: 22px;
     padding: 5px;
 	/*
     background: #fff;
