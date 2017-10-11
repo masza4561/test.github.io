@@ -1,5 +1,12 @@
+var map;
+function initMap() {
+	map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 47.488836, lng: 19.051549},
+          zoom: 15
+        });
+	}
+	
 jQuery(document).ready(function () {
-
 
     $('#carouselHacked').carousel({
 		// interval : 30000,
@@ -14,14 +21,7 @@ jQuery(document).ready(function () {
         lng: 19.051549
     });
 	*/	
-	var map;
-    function initMap() {
-	map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -47.488836, lng: 19.051549},
-          zoom: 10
-        });
-	}
-	
+		
 	var picture_change = 0;
 
 
