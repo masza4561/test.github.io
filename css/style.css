@@ -144,9 +144,11 @@ li a.active {
     width: 200px;
     height: 60px;
     /* background: #3a9ecb; */
-    background: #65918c;
+    /* background: #65918c; */
+    background: rgba(101,145,144, 0.6);
     color: #fff;
     font-size: 30px;
+	padding-top: 5px;
     text-transform: uppercase;
     border: 0;
 	/* margin-top: 30px; button elotti terkoz */
@@ -158,7 +160,9 @@ li a.active {
 }
 .carousel-caption button:hover {
     /*background: #2a2a2a; */
-    background: #b1ceca;
+    /*background: #b1ceca; */
+	background: rgba(101,145,144, 1);
+	border: 0px;
 }
 .carousel-control {
     width: 5%;
@@ -364,11 +368,21 @@ li a.active {
 .service .row:after {
 	padding-bottom: 20px;
 }
+.service a {
+	color: rgba(101,145,144, 0.85);
+	font-size: 20px;
+}
+.service a:hover {
+	color: #65918c;
+}
 .service h2 {
     font-size: 90px;
     color: #fff;
     margin-top: 85px;
     margin-bottom: 40px;
+}
+.service h3 {
+    font-weight: bold;
 }
 .service h4 {
     font-size: 24px;
@@ -764,7 +778,7 @@ transform:rotate(-45deg);
 }
 .contact-info ul li {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    /*font-size: 14px;*/
     color: #fff;
 }
 .contact-info i.fa {
@@ -780,7 +794,7 @@ transform:rotate(-45deg);
     width: 100%;
     height: 40px;
     background: #fff;
-    font-size: 14px;
+    /* font-size: 14px; */
     color: #084a5c;
     font-family: 'Open Sans', sans-serif;
     padding: 12px;
@@ -789,7 +803,7 @@ transform:rotate(-45deg);
 }
 .contact-form textarea {
     font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	/* font-size: 14px; */
 	color: #084a5c;
     padding: 12px;
     width: 100%;
@@ -798,11 +812,12 @@ transform:rotate(-45deg);
     margin-bottom: 12px;
 }
 .info-detail {
-    border-top: 1px solid #53cde5;
+    /* border-top: 1px solid #53cde5; */
+    border-top: 2px solid #DED1AE;
     padding-top: 15px;
 }
 .form {
-    border-top: 1px solid #53cde5;
+    border-top: 2px solid #DED1AE;
     padding-top: 15px;
     text-align: right;
 }
@@ -812,13 +827,22 @@ transform:rotate(-45deg);
     float: right;
     font-size: 24px;
     color: #fff;
-    background: url(../img/btn-bg.jpg);
-    background-repeat: no-repeat;
+    background-color: rgba(177,206,202, 0.3);
     padding: 0;
 	margin-bottom: 30px;
     font-family: 'BenchNine', sans-serif;
     font-weight: bold;
+	transition: all .7s ease 0s;
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    -ms-transition: all .7s ease 0s;
 }
+
+.contact-form input.submit-btn:hover {
+	background-color: rgba(177,206,202, 0.5);
+}
+
 .contact-form {
     padding-left: 30px;
     padding-right: 30px;
@@ -835,6 +859,7 @@ transform:rotate(-45deg);
 }
 .contact {
     position: absolute;
+	font-size: 16px;
     width: 100%;
     height: 750px;
     margin-top: 0px;

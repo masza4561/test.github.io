@@ -7,7 +7,7 @@ function initMap() {
 	}
 	
 jQuery(document).ready(function () {
-
+	
     $('#carouselHacked').carousel({
 		// interval : 30000,
 		pause: null // img mouseover action cause pause the autoplay
