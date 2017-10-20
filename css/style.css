@@ -1105,22 +1105,34 @@ responsive area
     .header-logo {
         margin-top: 20px !important;
     }
-	*/
-	.col-xs-12 {
-		height: 0px;
+	*/	
+	.top-header {
+		
 	}
-	
+	.navbar {
+		min-height: 30px;
+	}
+
+	.navbar-default {
+			margin-top: 0px;
+	}
     .navbar-default .navbar-toggle {
         border-color: #fff;
-        margin-top: -10px;
+        margin-top: 0px;
+		padding-bottom: 9px;
         /* right: 10%; */
+		margin-right: 0px;
     }
+	.navbar-default .navbar-collapse {
+		margin-top: 5px;
+	}
+	
     .navbar-default .navbar-nav>li>a {
         font-size: 16px;
         text-align: left;
     }
     .header-backup {
-        height: 80px;
+        height: 60px;
     }
     .carousel-caption {
         margin-top: -90px;
@@ -1140,13 +1152,13 @@ responsive area
     }
     .carousel-control .glyphicon-chevron-right,
     .carousel-control .icon-next {
-        margin-top: 30px;
+        margin-top: 20px;
 		margin-left: -5px;
 		font-size: 16px;
     }
     .carousel-control .glyphicon-chevron-left,
     .carousel-control .icon-prev {
-        margin-top: 30px;
+        margin-top: 20px;
 		margin-left: -5px;
 		font-size: 16px;
     }
