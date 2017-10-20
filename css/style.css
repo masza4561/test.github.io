@@ -255,6 +255,7 @@ li a.active {
     font-size: 24px;
     color: #737373;
     margin-bottom: 45px;
+	line-height: 120%;	
 }
 .about-img img {
     width: 100%;
@@ -742,7 +743,8 @@ transform:rotate(-45deg);
 
 .contact-caption {
     /* background: #3a9dca; */
-    background: #65918c;
+    /*background: #65918c; */
+    background: rgba(101, 144, 141, 0.8);
 }
 .contact-heading h2 {
     color: #fff;
@@ -1104,10 +1106,14 @@ responsive area
         margin-top: 20px !important;
     }
 	*/
+	.col-xs-12 {
+		height: 0px;
+	}
+	
     .navbar-default .navbar-toggle {
         border-color: #fff;
-        margin-top: -25px;
-        right: 10%;
+        margin-top: -10px;
+        /* right: 10%; */
     }
     .navbar-default .navbar-nav>li>a {
         font-size: 16px;
@@ -1117,26 +1123,32 @@ responsive area
         height: 80px;
     }
     .carousel-caption {
-        margin-top: -60px;
+        margin-top: -90px;
     }
     .carousel-caption h1 {
-        font-size: 20px;
+        font-size: 40px;
+		margin-bottom: 20px;
     }
     .carousel-caption p {
-        font-size: 12px;
+        font-size: 24px;
     }
     .carousel-caption button {
-        width: 90px;
-        height: 23px;
-        font-size: 16px;
+        width: 110px;
+        height: 40px;
+		padding-bottom: 3px; 
+        font-size: 18px;
     }
     .carousel-control .glyphicon-chevron-right,
     .carousel-control .icon-next {
         margin-top: 30px;
+		margin-left: -5px;
+		font-size: 16px;
     }
     .carousel-control .glyphicon-chevron-left,
     .carousel-control .icon-prev {
         margin-top: 30px;
+		margin-left: -5px;
+		font-size: 16px;
     }
     .about h2 {
         font-size: 50px;
@@ -1146,6 +1158,8 @@ responsive area
     }
 	.about h4 {
 		font-size: 20px !important;
+		margin-top: 20px;
+		text-align: justify;
 	}
     .service h2 {
         font-size: 50px;
@@ -1170,28 +1184,30 @@ responsive area
     }
     .contact-heading h2 {
         font-size: 50px;
-        text-align: left;
-        margin-left: 15px;
     }
     .contact-info h3 {
         margin-left: 8px;
+		margin-right: 8px;
         font-size: 25px;
         padding-bottom: 8px;
     }
     .info-detail {
         margin-left: 8px;
+		margin-right: 8px;
     }
     .contact-info ul li {
-        font-size: 10px;
+        font-size: 14px;
     }
     .contact-info i.fa {
-        font-size: 13px;
-        width: 20px;
-        height: 18px;
+        font-size: 14px;
+        width: 24px;
+        height: 30px;
     }
     .contact-info,
     .contact-form {
         padding: 10px;
+		margin-left: 8px;
+		margin-right: 8px;
     }
     .contact-form h3 {
         font-size: 25px;
@@ -1199,11 +1215,29 @@ responsive area
         margin-bottom: 0;
         margin-right: 0px;
     }
+	
+	.contact-form input {
+		padding: 8px;
+	}
+	
+	.contact-form textarea {
+		padding: 8px;
+	}
+	
+	.contact-form input.submit-btn {
+		font-size: 20px;
+		height: 40px;
+	}
+	
     .footer a i.fa {
         font-size: 18px;
         padding: 25px 7px;
     }
-    .footer p {
+    .footer h3 {
+		font-size: 24px;
+	}
+	.footer p {
         font-size: 10px;
     }
+	
 }
