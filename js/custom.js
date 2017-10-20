@@ -21,7 +21,14 @@ jQuery(document).ready(function () {
         lng: 19.051549
     });
 	*/	
-		
+	
+	$(".navbar a").click(function (e) { 
+		if ($(window).width() <= 479) {
+			$(".navbar button").click();
+		}
+	});
+	
+	
 	var picture_change = 0;
 
 
