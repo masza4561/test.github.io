@@ -22,6 +22,7 @@ jQuery(document).ready(function () {
     });
 	*/	
 	
+	// navbar - menu element click event: close the navbar list
 	$(".navbar a").click(function (e) { 
 		if ($(window).width() <= 479) {
 			$(".navbar button").click();
@@ -76,7 +77,12 @@ jQuery(document).ready(function () {
     //this code is for animation nav
 	    jQuery(window).scroll(function () {
         var windowScrollPosTop = jQuery(window).scrollTop();
-
+		
+		// scrolling eseten nincs nyitott menubar
+		if (jQuery("#bs-example-navbar-collapse-1").hasClass("in")) {
+			$(".navbar button").click();
+		}
+				
         if (windowScrollPosTop >= 150) {
             /*
 			jQuery(".header").css({

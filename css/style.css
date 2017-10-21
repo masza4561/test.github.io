@@ -242,6 +242,8 @@ li a.active {
 /*about area*/
 .about .profile_picture {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .about h2 {
@@ -537,6 +539,10 @@ li a.active {
     position: absolute;
 }
 
+.service .row.fix {
+	display: flex;
+	flex-wrap: wrap;
+}
 /* test services */
 
 section {
@@ -1050,7 +1056,7 @@ responsive area
 
 @media (min-width: 480px) and (max-width: 767px) {
     .header-logo img {
-        margin-top: 20px;
+        margin-top: 0px;
 		max-height: 56px;
     }
     .navbar-default .navbar-nav>li>a {
@@ -1070,6 +1076,19 @@ responsive area
         height: 40px;
         font-size: 20px;
     }
+	.navbar-default .navbar-toggle {
+		margin-top: 0px;
+	}
+	#home .header-backup {
+		max-height: 75px;
+	}
+	
+	.about h4 {
+		margin-top: 20px;
+		margin-bottom: 0px;
+		text-align: justify;
+		line-height: 1.5;
+	}
     #map {
         height: 1120px;
     }
@@ -1092,6 +1111,9 @@ responsive area
     .contact-caption {
         margin-top: 140px;
     }
+	.footer h3 {
+		font-size: 30px;
+	}
 }
 
 /* XS Portrait */
